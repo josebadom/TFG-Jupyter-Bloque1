@@ -1,0 +1,175 @@
+/* Clase para el texto */
+.texto{
+    
+    text-align: justify;
+    text-justify: inter-word;
+    width: 90%;
+    padding-top: 1vh;
+    padding-bottom: 1vh; 
+    margin: auto;
+    
+}
+
+/* Clase para las formulas */
+.formulas{
+    
+    width: 90%;
+    padding-top: 1vh;
+    padding-bottom: 1vh;  
+    font-size: 20px;
+    margin: auto;
+}
+
+/* Clase para enmarcar ecuaciones */
+.resultado{
+    
+    width: 90%;
+    padding-top: 1vh;
+    padding-bottom: 1vh;  
+    font-size: 20px;
+    margin: auto;
+    border: 4px solid red;
+    padding:auto;
+}
+
+/* Clase utilizada para los bloques       
+"Antes de empezar" y "Analizando el resultado" */
+
+.antesDe{
+box-sizing:border-box;
+border: 2px solid black;
+background-color: rgba(141, 140, 140, 0.1);
+font-size:15px;
+padding:15px;
+margin: auto;
+}
+
+/* Clase para listas ordenadas con letras */
+
+ol.enunciado{
+list-style-type: lower-alpha;
+}
+
+/* Para aumentar el espaciado en las listas */
+
+li{
+    padding:1vh;
+}
+
+/* Clase que permite dividir la celda en dos */
+
+.split{
+
+    /* Mostrar la rejilla de la división */
+    display: grid;
+
+    /* Dividir la rejilla en dos columnas y asignar la mitad del espacio 
+    disponible a cada una */
+    grid-template-columns: 1fr 1fr;
+
+
+    /* Determinar la posición que tendrá cada celda dentro del contenedor 
+    principal */
+    grid-template-areas:"izq    dcha ";
+
+    /* Espaciado entre celdas */
+    grid-gap:0px;   
+
+    /* Alinear horizontalmente elementos en las celdas del contenedor */
+    justify-items:center;
+
+    /* Alinear verticalmente elementos en las celdas del contenedor */
+    align-items: center; 
+    
+    Width:90%
+
+}
+
+.split .izq{
+
+    /* Atribuir celda(s) a la clase */
+    grid-area: izq;
+
+    /* Centrar */
+    position: relative;
+    
+    width:100%;
+}
+.split .dcha{
+
+    /* Atribuir celda(s) a la clase */
+    grid-area: dcha;
+
+    /* Centrar  */
+    position: relative;
+    
+    width:100%;
+
+}
+/* CSS */
+.button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}

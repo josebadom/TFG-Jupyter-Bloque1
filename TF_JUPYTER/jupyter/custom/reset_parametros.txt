@@ -1,0 +1,44 @@
+<style>
+/* Clase para el texto */
+.texto{
+    
+    text-align: none;
+    text-justify: none;
+    width: initial;
+    padding-top: initial;
+    padding-bottom: initial; 
+    margin: initial;
+    
+}
+
+/* Clase para las formulas */
+.formulas{
+    
+    width: initial;
+    padding-top: initial;
+    padding-bottom: initial;  
+    font-size: initial;
+    margin: initial;
+}
+
+
+/* Clase utilizada para los bloques       
+"Antes de empezar" y "Analizando el resultado" */
+
+.antesDe{
+box-sizing:none;
+border: none;
+background-color: white;
+font-size:initial;
+padding:initial;
+margin: initial;
+}
+
+
+/* Para aumentar el espaciado en las listas */
+
+li{
+    padding:initial;
+}
+
+</style>
